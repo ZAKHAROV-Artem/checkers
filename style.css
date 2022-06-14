@@ -1,0 +1,100 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgba(227, 135, 30, 0.765);
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.board {
+    max-width: 1020px;
+    width: 85vh;
+    height: 85vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    border: 3px solid rgb(103, 27, 4);
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+span {
+    color: rgb(229, 226, 226);
+    font-weight: 900;
+    position: absolute;
+}
+
+.letter {
+    top: 5px;
+    left: 5px;
+}
+
+.number {
+    bottom: 5px;
+    left: 5px;
+}
+
+.white {
+    background-color: rgb(234, 188, 112);
+}
+
+.black {
+    background-color: rgb(57, 17, 17);
+}
+
+.checker {
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+.checker:hover {
+    cursor: pointer;
+}
+
+.checker-white {
+    background-image: url('img/checker_white.png');
+}
+
+.checker-black {
+    background-image: url('img/checker_black.png');
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+
+.info span {
+    color: black;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+
+    padding: 10px 20px;
+    margin: 20px;
+
+    margin-left: 0;
+    background-color: rgb(57, 17, 17);
+    color: rgb(234, 188, 112);
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+}
